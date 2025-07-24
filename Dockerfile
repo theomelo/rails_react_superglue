@@ -2,13 +2,10 @@
 # check=error=true
 
 # This Dockerfile is designed for production, not development. Use with Kamal or build'n'run by hand:
-<<<<<<< HEAD
-# docker build -t super_glue_template .
-# docker run -d -p 80:80 -e RAILS_MASTER_KEY=<value from config/master.key> --name super_glue_template super_glue_template
-=======
+
 # docker build -t rails_react_superglue .
 # docker run -d -p 80:80 -e RAILS_MASTER_KEY=<value from config/master.key> --name rails_react_superglue rails_react_superglue
->>>>>>> 24046d8 (Initial commit)
+
 
 # For a containerized dev environment, see Dev Containers: https://guides.rubyonrails.org/getting_started_with_devcontainer.html
 

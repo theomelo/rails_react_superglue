@@ -1,0 +1,21 @@
+{
+  "name": "app",
+  "private": true,
+  "devDependencies": {
+    "@thoughtbot/candy_wrapper": "^0.0.3",
+    "@types/node": "^24.1.0",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "esbuild": "^0.25.8"
+  },
+  "scripts": {
+    "build": "esbuild app/javascript/*.* --bundle --sourcemap --format=esm --outdir=app/assets/builds --public-path=/assets"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.8.2",
+    "@thoughtbot/superglue": "^1.0.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-redux": "^9.2.0"
+  }
+}

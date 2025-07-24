@@ -1,0 +1,6 @@
+json.body(defer: [:auto, placeholder: {greet: "Waiting..."}]) do
+  sleep 2
+  json.greet "Hello world"
+end
+
+json.footer "Made with tears"

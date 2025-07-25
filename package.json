@@ -6,7 +6,9 @@
     "@types/node": "^24.1.0",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
-    "esbuild": "^0.25.8"
+    "esbuild": "^0.25.8",
+    "vite": "^5.0.0",
+    "vite-plugin-ruby": "^5.1.0"
   },
   "scripts": {
     "build": "esbuild app/javascript/*.* --bundle --sourcemap --format=esm --outdir=app/assets/builds --public-path=/assets"

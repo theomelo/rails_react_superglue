@@ -53,3 +53,5 @@ group :development do
 end
 
 gem "superglue", "~> 1.1"
+
+gem "vite_rails", "~> 3.0"

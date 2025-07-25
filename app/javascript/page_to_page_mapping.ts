@@ -28,10 +28,22 @@
 // }
 // ```
 //
-import HomeShow from '../views/home/show';
+// import HomeShow from '../views/home/show';
 
-const pageIdentifierToPageComponent = {
-  'home/show': HomeShow,
-};
+// const pageIdentifierToPageComponent = {
+//   'home/show': HomeShow,
+// };
+
+// export { pageIdentifierToPageComponent }
+
+const pageIdentifierToPageComponent = {}
+const pages = import.meta.glob('../views/**/*.tsx', { eager: true })
+
+for (const key in pages) {
+  if (pages.hasOwnProperty(key)) {
+    const identifier = key.replace("../views/", "").split('.')[0];
+    pageIdentifierToPageComponent[identifier] = pages[key].default;
+  }
+}
 
 export { pageIdentifierToPageComponent }
